@@ -1,0 +1,77 @@
+swagger: '2.0'
+info:
+  title: 孩子通API文档
+  version: 1.0.0
+  description:  |
+
+basePath: /1
+paths:
+  "/test/api":
+        get:
+          summary: 测试api
+          tags:
+            - 1 工具
+          produces:
+            - application/json
+            - application/xml
+          parameters:
+
+          responses:
+            "200":
+              description : ok
+              schema:
+                type: object
+                properties:
+                  auth:
+                    type: string
+
+  "/test/kafka/producer/msg":
+        get:
+          summary: 发送kafka消息
+          tags:
+            - 1 工具
+          produces:
+            - application/json
+            - application/xml
+          parameters:
+            - in: query
+              name: topic
+              description: kafka topic
+              type: string
+              required: true
+            - in: query
+              name: msg
+              description: kafka 消息
+              type: string
+              required: true
+          responses:
+            "200":
+              description : ok
+              schema:
+                type: object
+                properties:
+                  msg:
+                    type: string
+
+  "/test/kafka/topic/create":
+        get:
+          summary: 创建 kafka topic
+          tags:
+            - 1 工具
+          produces:
+            - application/json
+            - application/xml
+          parameters:
+            - in: query
+              name: topic
+              description: kafka topic
+              type: string
+              required: true
+          responses:
+            "200":
+              description: ok
+              schema:
+                type: object
+                properties:
+                  msg:
+                    type: string

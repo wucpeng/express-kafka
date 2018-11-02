@@ -1,0 +1,9 @@
+{
+  "port"  : 9999,
+  "title" : "modaldev",
+  "DOMAIN": "modaldev.xxx.com",
+  "dbLink": "mongodb://xxx:xxx123@192.168.0.2:27017,192.168.0.5:27017/xxx?replicaSet=inner_test",
+  "dbAccountLink": "mongodb://xxx:xxx@192.168.0.2:27017,192.168.0.5:27017/xxx?replicaSet=inner_test",
+  "kafkaZPLink": "192.168.0.3:52181,192.168.0.4:52181,192.168.0.167:52181",
+  "kafkaSELink": "192.168.0.3:9092,192.168.0.4:9092,192.168.0.167:9092"
+}

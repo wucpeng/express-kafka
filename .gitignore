@@ -1,0 +1,7 @@
+log4js
+node_modules
+.idea
+ps.log
+env_config.json
+package-lock.json
+modaldev.log
