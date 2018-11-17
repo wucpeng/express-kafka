@@ -38,7 +38,7 @@ consumer.on("data", (m)=> {
         consumer.commit(m);
     }
     m.value = m.value.toString();
-    log.debug('data', m);
+    log.debug('consumer data', m);
     //console.debug('data', m.value.toString());
 });
 
@@ -69,3 +69,19 @@ exports.kafkaConsumer = ()=> {
 };
 
 exports.kafkaConsumer();
+
+
+// upstream tunnel {
+//     server 127.0.0.1:7689;
+// }
+// server {
+//     listen 80;
+//     server_name dev.ninghao.net;
+//     location / {
+//         proxy_set_header X-Real-IP $remote_addr;
+//         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+//         proxy_set_header Host $http_host;
+//         proxy_redirect off;
+//         proxy_pass http://tunnel;
+//     }
+// }

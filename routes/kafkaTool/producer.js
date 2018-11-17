@@ -8,7 +8,7 @@ exports.createProduceMsg = (msgData, topic, callback)=> {
 };
 
 exports.sendTestProducerMsg = (req, res)=> {
-    //log.debug("sendTestProducerMsg");
+    log.debug("sendTestProducerMsg", req.body, req.query);
     try {
         let msg = req.param('msg');
         let topic = req.param('topic');

@@ -27,7 +27,7 @@ class toKafka {
                 log.error(`${topic} ${message} error`, err);
                 cb(err);
             }
-            //log.info(`${topic} ${message} success`, data);
+            log.info(`${topic} ${message} success`, data);
             cb(null, data);
         });
     }

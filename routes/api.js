@@ -16,4 +16,5 @@ app.get('/test/api', (req, res)=> {
 });
 
 app.get('/test/kafka/producer/msg', kafkaProducer.sendTestProducerMsg);
+app.post('/test/kafka/producer/msg', kafkaProducer.sendTestProducerMsg);
 app.get('/test/kafka/topic/create', kafkaTopic.createTopics);

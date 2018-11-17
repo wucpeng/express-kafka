@@ -1,5 +1,5 @@
 {
-  "port"  : 9999,
+  "port"  : 3000,
   "title" : "modaldev",
   "DOMAIN": "modaldev.xxx.com",
   "dbLink": "mongodb://xxx:xxx123@192.168.0.2:27017,192.168.0.5:27017/xxx?replicaSet=inner_test",
